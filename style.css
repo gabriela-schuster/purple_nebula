@@ -64,7 +64,6 @@ nav a:hover {
 }
 
 header {
-	/* height: 94vh; */
 	background: url(images/herobg.png);
 	background-position: center;
 	background-size: cover;
@@ -106,7 +105,7 @@ header {
 .gallery_text {
 	margin-left: 3rem;
 }
-#gallery img{
+#gallery img {
 	width: 110%;
 	box-shadow: 20px -30px var(--bold);
 }
@@ -153,6 +152,7 @@ footer .contact_infos {
 	padding: 2rem;
 	margin: auto;
 	
+	background-color: rgba(0, 0, 0, 0.5);
 	border: 2px solid var(--bg);
 	border-top: 2px solid var(--bold);
 	box-shadow: 0 0 10px var(--bg);
@@ -173,4 +173,77 @@ footer .contact_infos {
 }
 .contact_infos img {
 	width: 200px;
+}
+
+@media(max-width: 810px) {
+	html {
+		font-size: 90%;
+	}
+
+	#gallery img {
+		width: 250px;
+	}
+
+	.box {
+		width: 250px;
+	}
+
+	.contact_infos .flex {
+		flex-direction: column;
+	}
+	.contact_infos img {
+		margin-top: 2rem;
+	}
+}
+@media(max-width: 450px) {
+	html {
+		font-size: 80%;
+	}
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	.flex {
+		flex-direction: column;
+	}
+
+	nav {
+		text-align: center;
+	}
+	nav a {
+		display: none;
+	}
+
+	.apresentation {
+		padding: 7rem 1rem;
+	}
+	.hero_grid {
+		grid-template: 1fr 1fr 1fr / 1fr 1fr;
+	}
+
+	.gallery_text{
+		text-align: center;
+		margin: 0;
+		width: 100%;
+	}
+	.gallery_text h2 {
+		margin-top: 2rem;
+	}
+
+	.about_text {
+		text-align: center;
+		margin-right: 0 !important;
+		margin-bottom: 2rem;
+	}
+
+	.numbers_grid {
+		grid-template: 1fr 1fr / 1fr 1fr;
+	}
+
+	footer {
+		padding: 5rem 0;
+	}
+	.contact_infos {
+		width: 100%;
+	}
 }
