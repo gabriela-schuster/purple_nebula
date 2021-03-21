@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--bg: #332c54;
+	--light: #757097;
+	--bold: #ad83ca;
+	--white: #f1f2eb;
+}
+body {
+	background-color: var(--bg);
+	color: var(--light);
+	font-family: 'Roboto Mono', sans-serif;
+}
+h1 {
+	color: var(--bold);
+	font-family: 'Roboto Slab', serif;
+}
+
+nav {
+	padding: 0.5rem 2rem;
+	border-top: 2px solid var(--bold);
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav span{
+	color: var(--white);
+	margin-left: 2rem;
+}
+
+header {
+	background: url(images/herobg.jpg);
+	height: 90vh;
+}
