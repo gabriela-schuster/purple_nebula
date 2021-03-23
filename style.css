@@ -67,7 +67,7 @@ header {
 	background: url(images/herobg.png);
 	background-position: center;
 	background-size: cover;
-	background-blend-mode: soft-light;
+	background-attachment: fixed;
 }
 .apresentation {
 	padding: 7rem 3rem;
@@ -117,6 +117,7 @@ header {
 	background-image: url(images/astronaut.png);
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	padding: 3rem;
 }
 #about .about_text {
